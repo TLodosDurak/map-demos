@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="p-4 h-[100vh]">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
-        <div className="w-[500px]">
+        {/* <div className="w-[500px]">
           <h2 className="text-xl font-bold text-center">Simple Map</h2>
           <SimpleMap />
         </div>
@@ -32,7 +32,7 @@ function App() {
         <div className="w-[500px]">
           <h2 className="text-xl font-bold text-center">Colored Map</h2>
           <ColoredMap />
-        </div>
+        </div> */}
 
         <div className="w-[500px]">
           <h2 className="text-xl font-bold text-center">Dotted Map</h2>
