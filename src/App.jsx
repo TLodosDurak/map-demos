@@ -3,6 +3,7 @@ import SVGWorldMap from "./components/Maps/SVGWorldMap";
 import MarkerMap from "./components/Maps/MarkerMap";
 import InteractiveMap from "./components/Maps/InteractiveMap";
 import ColoredMap from "./components/Maps/ColoredMap";
+import DottedMap from "./components/Maps/DottedMap";
 
 function App() {
   return (
@@ -31,6 +32,11 @@ function App() {
         <div className="w-[500px]">
           <h2 className="text-xl font-bold text-center">Colored Map</h2>
           <ColoredMap />
+        </div>
+
+        <div className="w-[500px]">
+          <h2 className="text-xl font-bold text-center">Dotted Map</h2>
+          <DottedMap />
         </div>
       </div>
     </div>
