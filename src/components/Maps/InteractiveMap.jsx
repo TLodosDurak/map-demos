@@ -11,13 +11,14 @@ const InteractiveMap = () => {
   };
 
   return (
-    <div className="w-full aspect-[2/1] max-w-4xl mx-auto">
+    <div className="w-fit">
       <ComposableMap
         width={1000}
         height={500}
         style={{
           width: "100%",
-          height: "auto"
+          height: "auto",
+          maxWidth: "500px"
         }}
       >
         <ZoomableGroup

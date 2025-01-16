@@ -9,7 +9,7 @@ const SVGWorldMap = () => {
   ];
 
   return (
-    <div className="w-full max-w-4xl mx-auto">
+    <div className="w-[full]">
       <WorldMap
         color="red"
         title="Population by Country"

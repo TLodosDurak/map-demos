@@ -5,7 +5,7 @@ const geoUrl = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
 const highlightedCountries = ["USA", "CHN", "IND", "BRA"]; // ISO Alpha-3 codes
 
 const SimpleMap = () => (
-  <div className="w-full aspect-[2/1] max-w-4xl mx-auto">
+  <div className="max-w-[500px] shrink-0">
     <ComposableMap
       projection="geoEqualEarth"
       projectionConfig={{
@@ -16,7 +16,8 @@ const SimpleMap = () => (
       height={500}
       style={{
         width: "100%",
-        height: "auto"
+        height: "auto",
+        maxWidth: "500px"
       }}
     >
       <Geographies geography={geoUrl}>

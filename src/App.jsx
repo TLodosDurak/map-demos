@@ -2,40 +2,34 @@ import SimpleMap from "./components/Maps/SimpleMap";
 import SVGWorldMap from "./components/Maps/SVGWorldMap";
 import MarkerMap from "./components/Maps/MarkerMap";
 import InteractiveMap from "./components/Maps/InteractiveMap";
-import RegionalMap from "./components/Maps/RegionalMap";
 import ColoredMap from "./components/Maps/ColoredMap";
 
 function App() {
   return (
-    <div className="p-4">
-      <div className="grid grid-cols-3 gap-8">
-        <div className="space-y-4">
-          <h2 className="text-xl font-bold">Simple Map</h2>
+    <div className="p-4 h-[100vh]">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+        <div className="w-[500px]">
+          <h2 className="text-xl font-bold text-center">Simple Map</h2>
           <SimpleMap />
         </div>
 
-        <div className="space-y-4">
-          <h2 className="text-xl font-bold">SVG World Map</h2>
+        <div className="w-[500px]">
+          <h2 className="text-xl font-bold text-center">SVG World Map</h2>
           <SVGWorldMap />
         </div>
 
-        <div className="space-y-4">
-          <h2 className="text-xl font-bold">Marker Map</h2>
+        <div className="w-[500px]">
+          <h2 className="text-xl font-bold text-center">Marker Map</h2>
           <MarkerMap />
         </div>
 
-        <div className="space-y-4">
-          <h2 className="text-xl font-bold">Interactive Map (Zoomable)</h2>
+        <div className="w-[500px]">
+          <h2 className="text-xl font-bold text-center">Interactive Map (Zoomable)</h2>
           <InteractiveMap />
         </div>
 
-        <div className="space-y-4">
-          <h2 className="text-xl font-bold">Regional Map (Europe)</h2>
-          <RegionalMap />
-        </div>
-
-        <div className="space-y-4">
-          <h2 className="text-xl font-bold">Colored Map</h2>
+        <div className="w-[500px]">
+          <h2 className="text-xl font-bold text-center">Colored Map</h2>
           <ColoredMap />
         </div>
       </div>
